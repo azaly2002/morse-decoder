@@ -49,7 +49,7 @@ function decode(expr) {
             }
             i += 1;
         }
-        else (a[i] == '1' && a[i - 1] == '1') {
+        else if (a[i] == '1' && a[i - 1] == '1') {
             morse_string += '-';
             if (i % 10 == 9) {
                 morse_string += ',';
